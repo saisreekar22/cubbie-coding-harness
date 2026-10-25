@@ -1,0 +1,25 @@
+/* Modern Web Starter - custom styles layered on top of Tailwind CDN */
+
+.card {
+  animation: fade-in 0.4s ease-out;
+}
+
+.task-item {
+  transition: opacity 0.2s ease-out;
+}
+
+.task-done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
