@@ -1,4 +1,9 @@
 # cubbie coding harness
+Cubbie can write code. But it can't plan real projects, build and test them, and host them. I turned Cubbie (a chatbot) into a full coding agent.
+
+# Core Problems Addressed
+
+Cubbie's sandbox is just to run code scripts to get outputs. It cannot build projects and give you the output files. I wanted to turn a chatbot into a coding agent, so I built a harness around the chatbot that can manage files, make git commits and hosting, etc. Basically, if Claude is Cubbie, I build a Claude Code for Cubbie.
 
 Build websites and apps through text messages. You describe what you want, the harness writes the code, runs the checks, and puts it live on the internet. No coding knowledge required.
 
