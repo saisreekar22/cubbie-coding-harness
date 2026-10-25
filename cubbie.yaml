@@ -1,0 +1,19 @@
+cubbie: 1
+dependencies:
+  pip:
+    - "requests==2.32.3"
+    - "pytest==8.3.3"
+  npm:
+    - "netlify-cli@27.12.1"
+network:
+  runtime:
+    - "api.github.com"
+    - "api.netlify.com"
+login:
+  - id: netlify
+    command: netlify login --request "cubbie coding harness wants to deploy your web apps" --json
+    status: python3 scripts/deploy.py status
+secrets:
+  - env: GITHUB_TOKEN
+    label: GitHub personal access token (repo scope), used only to push branches and open pull requests
+    help_url: https://github.com/settings/tokens
